@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $font-stack;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 0.9;
+  margin-top: 3em;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 2.2rem;
+  margin: 2em 0;
+  color: $primary-color;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}

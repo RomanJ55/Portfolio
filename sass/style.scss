@@ -1,0 +1,262 @@
+@import "config";
+@import "base";
+@import "utils";
+
+header {
+  .logo,
+  .menu {
+    height: 3rem;
+    width: auto;
+  }
+
+  .menu {
+    height: 2rem;
+    cursor: pointer;
+  }
+
+  .navigation {
+    margin: 1rem 0;
+  }
+
+  .navigation .flex {
+    justify-content: space-between;
+  }
+  nav {
+    display: none;
+  }
+}
+
+.hero {
+  text-align: center;
+  min-height: 100vh;
+  .bg {
+    background-image: url("../img/hero-bg.png");
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: -1;
+  }
+
+  h1 {
+    span {
+      color: $primary-color;
+    }
+  }
+  p {
+    color: $dark-color;
+    margin: 1em 0;
+    span {
+      font-weight: bold;
+    }
+  }
+
+  .btn {
+    margin: 3rem 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+}
+
+.work {
+  text-align: center;
+
+  .container {
+    margin: 0;
+  }
+
+  .project {
+    padding: 1.5em;
+    background-color: rgb(236, 236, 236);
+    h3 {
+      color: $primary-color;
+      margin: 1em 0;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    p {
+      margin: 1.5em auto;
+      max-width: 46ch;
+      line-height: 2;
+    }
+
+    img {
+      border-radius: 1em;
+    }
+  }
+  .blue {
+    background-color: $primary-color;
+    color: white;
+
+    h3 {
+      color: white;
+    }
+  }
+
+  .project-end {
+    padding: 1.5em 0;
+    background-color: $primary-color;
+    color: white;
+    cursor: pointer;
+
+    a {
+      font-size: 1.5rem;
+      color: white;
+    }
+
+    img {
+      margin: 0 1em;
+      height: 2rem;
+      width: auto;
+      transform: translateY(0.3em);
+    }
+  }
+}
+
+.skills {
+  position: relative;
+  text-align: center;
+  .bg {
+    background-image: url("../img/skills-bg.png");
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: -1;
+  }
+
+  .card {
+    h3 {
+      font-weight: bold;
+      font-size: 1.3rem;
+      text-decoration: underline;
+      margin-bottom: 1em;
+    }
+
+    p {
+      font-size: 1.1rem;
+      line-height: 2;
+    }
+
+    .left {
+      text-align: left;
+    }
+
+    .right {
+      text-align: right;
+    }
+
+    .flex {
+      justify-content: space-between;
+    }
+  }
+}
+
+.wyg {
+  text-align: center;
+  background-color: $dark-color;
+
+  h2 {
+    color: white;
+  }
+
+  .flex {
+    flex-direction: column;
+  }
+
+  .card {
+    background-color: white;
+
+    h3 {
+      font-weight: bold;
+      font-size: 1.3rem;
+      margin-bottom: 1em;
+    }
+
+    p {
+      color: black;
+      line-height: 1.8;
+      text-align: left;
+      padding-right: 0.5em;
+    }
+
+    img {
+      width: 2rem;
+    }
+
+    .flex {
+      flex-direction: row;
+    }
+  }
+}
+
+.contact {
+  background-image: url("../img/contact-bg.png");
+  background-position: center;
+  background-size: auto;
+
+  h2 {
+    color: white;
+    text-align: center;
+  }
+
+  form {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5rem;
+
+    label {
+      margin: 0.2em 0;
+      font-size: 1.5em;
+      border-width: 0.2px;
+    }
+
+    input,
+    textarea {
+      margin-bottom: 0.7em;
+      border-radius: 0.7em;
+      padding: 1em;
+      border-color: $primary-color;
+    }
+
+    .btn {
+      margin: 1em 0;
+    }
+  }
+}
+
+footer {
+  padding-top: 1em;
+  .flex {
+    justify-content: space-between;
+  }
+  .footer-logo {
+    height: 2.5rem;
+    width: auto;
+  }
+
+  .social {
+    img {
+      width: 1.75rem;
+      margin: 0 1em;
+    }
+  }
+
+  nav {
+    ul {
+      margin: 1em 0;
+      li a {
+        color: black;
+      }
+    }
+  }
+}
+
+@import "media";
