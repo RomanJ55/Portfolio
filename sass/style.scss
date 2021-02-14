@@ -120,6 +120,10 @@ header {
     img {
       margin: 1.5em 0;
     }
+
+    &:hover img {
+      transform: scale(1.08);
+    }
   }
   .blue {
     background-color: $primary-color;
@@ -246,10 +250,15 @@ header {
     img {
       width: 1.5rem;
       justify-self: flex-end;
+      transition: 0.4s;
     }
 
     .flex {
       flex-direction: row;
+    }
+
+    &:hover img {
+      transform: scale(1.1);
     }
   }
 }
@@ -309,6 +318,11 @@ footer {
     img {
       width: 1.75rem;
       margin: 0 1em;
+      transition: 0.4s;
+
+      &:hover {
+        transform: translateY(-5px);
+      }
     }
   }
 
