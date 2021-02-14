@@ -48,9 +48,14 @@
     }
   }
 
+  .contact {
+    form {
+      max-width: 65%;
+    }
+  }
+
   footer {
     .social img {
-      width: 2rem;
       margin-left: 2.5em;
       margin-right: 0;
     }
@@ -60,7 +65,7 @@
 // desktop
 @media (min-width: 999px) {
   html {
-    font-size: 1.3em;
+    font-size: 1.2em;
   }
   .container {
     margin: 0 8%;
@@ -82,11 +87,16 @@
 
     .projects {
       grid-template-columns: repeat(3, 1fr);
+      border: 1px solid #e0e0e0;
     }
     .project {
       p {
         margin: 1.5em 0;
         line-height: 2;
+      }
+
+      img {
+        max-height: 165px;
       }
 
       &:nth-child(3) {
@@ -95,12 +105,28 @@
         h3 {
           color: $primary-color;
         }
+
+        .btn {
+          background: $primary-color;
+          color: white;
+        }
       }
       &:nth-child(4) {
         background-color: $primary-color;
         color: white;
         h3 {
           color: white;
+        }
+
+        .tags {
+          li {
+            color: black;
+          }
+        }
+
+        .btn {
+          background: white;
+          color: $primary-color;
         }
       }
     }
@@ -150,16 +176,14 @@
 
   .contact {
     form {
-      max-width: 70%;
-      margin-left: auto;
-      margin-right: auto;
+      max-width: 50%;
     }
   }
 }
 
 @media (min-width: 1400px) {
   html {
-    font-size: 1.6em;
+    font-size: 1.4em;
   }
   .container {
     margin: 0 10%;
@@ -169,12 +193,16 @@
     background-image: url(../img/hero-bg-big.png);
   }
 
-  .skills .bg {
+  .skills {
     background-image: url(../img/skills-bg-big.png);
   }
 
   .skills .card .flex {
     justify-content: space-around;
+  }
+
+  .wyg .flex {
+    gap: 3.3em;
   }
 
   .contact {
@@ -185,19 +213,17 @@
 // big screens
 @media (min-width: 2200px) {
   html {
-    font-size: 2em;
+    font-size: 2.2em;
   }
   .container {
-    margin: 0 12%;
+    margin: 0 13%;
   }
 
   .cards {
     gap: 4em;
   }
 
-  .contact {
-    form {
-      max-width: 55%;
-    }
+  .wyg .flex {
+    gap: 4em;
   }
 }
