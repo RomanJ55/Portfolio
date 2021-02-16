@@ -46,6 +46,19 @@
               </ul>
             </nav>
             <img src="img/menu.svg" alt="menu" class="menu" />
+            <div class="mobile-nav">
+              <ul class="flex">
+                <li>
+                  <a class="close"
+                    >Close menu <img src="img/close.svg" alt="close menu"
+                  /></a>
+                </li>
+                <li><a href="#heroSection">Home</a></li>
+                <li><a href="#workSection">Work</a></li>
+                <li><a href="#skillsSection">Skills</a></li>
+                <li><a href="#contactSection">Contact</a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -54,10 +67,11 @@
     <section class="hero" id="heroSection">
       <div class="bg"></div>
       <div class="container">
-        <h1>Beautiful creative<br /><span>Solutions for everyone.</span></h1>
-        <p>Romanov Jaroslav <span>-Developer</span></p>
-        <a href="#workSection" class="btn">My work</a>
-        <img src="img/guy.svg" alt="" />
+        <div class="content">
+          <h1>Beautiful creative<br /><span>Solutions for everyone.</span></h1>
+          <p>Romanov Jaroslav <span>-Developer</span></p>
+          <a href="#workSection" class="btn">My work</a>
+        </div>
       </div>
     </section>
 
@@ -317,47 +331,47 @@
 
     <section class="wyg" id="wygSection">
       <div class="container">
-        <h2>What you'll get</h2>
-        <div class="flex">
+        <h2>My services</h2>
+        <div class="cards">
           <div class="card" data-aos="flip-right">
-            <div class="title flex">
+            <img src="img/pencil.svg" alt="" />
+            <div class="title">
               <h3>Unique design</h3>
-              <img src="img/pencil.svg" alt="" />
+              <p>
+                No templates. No random stock. Your design will be a one of a
+                kind!
+              </p>
             </div>
-            <p>
-              No templates. No random stock. Your design will be a one of a
-              kind!
-            </p>
           </div>
           <div class="card" data-aos="flip-left">
-            <div class="title flex">
+            <img src="img/mobile-check.svg" alt="" />
+            <div class="title">
               <h3>Responsive Layout</h3>
-              <img src="img/mobile-check.svg" alt="" />
+              <p>
+                Looks great on all screens sizes. From tiny mobile devices to
+                big flatscreens!
+              </p>
             </div>
-            <p>
-              Looks great on all screens sizes. From tiny mobile devices to big
-              flatscreens!
-            </p>
           </div>
           <div class="card" data-aos="flip-right">
-            <div class="title flex">
+            <img src="img/search-replace.svg" alt="" />
+            <div class="title">
               <h3>Multiple Revisions</h3>
-              <img src="img/search-replace.svg" alt="" />
+              <p>
+                Whenever you feel like you want something changed, I'll adjust
+                it for free!
+              </p>
             </div>
-            <p>
-              Whenever you feel like you want something changed, I'll adjust it
-              for free!
-            </p>
           </div>
           <div class="card" data-aos="flip-left">
-            <div class="title flex">
+            <img src="img/fastright.svg" alt="" />
+            <div class="title">
               <h3>Fast delivery</h3>
-              <img src="img/fastright.svg" alt="" />
+              <p>
+                Don't like waiting too long? You won't have to! I'll complete
+                your order within 48 hours!
+              </p>
             </div>
-            <p>
-              Don't like waiting too long? You won't have to! I'll complete your
-              order within 48 hours!
-            </p>
           </div>
         </div>
       </div>
@@ -366,14 +380,19 @@
     <section class="contact" id="contactSection">
       <div class="container">
         <h2>Contact me</h2>
-        <form class="card" data-aos="flip-up">
+        <form
+          class="card"
+          data-aos="flip-up"
+          action="https://getform.io/f/18685386-03ae-475d-86af-2fda5b8bbea1"
+          method="POST"
+        >
           <label for="name">Name:</label>
           <input type="text" name="name" id="name" />
           <label for="email">Email:</label>
           <input type="email" name="email" id="email" />
           <label for="message">Your Message:</label>
           <textarea name="message" id="message" cols="30" rows="10"></textarea>
-          <button class="btn">Send</button>
+          <button type="submit" class="btn">Send</button>
         </form>
       </div>
     </section>
