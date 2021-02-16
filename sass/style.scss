@@ -229,51 +229,39 @@ header {
 }
 
 .skills {
-  background-image: url("../img/skills-bg.png");
-  background-position: top center;
-  background-size: cover;
   text-align: center;
 
   h2 {
     margin-bottom: 0.5rem;
   }
 
+  .cards {
+    display: grid;
+    margin: 5em 0;
+    gap: 1.5em;
+  }
+
   .card {
+    min-width: 160px;
+    margin: 0;
+    padding: 1em;
     h3 {
       font-weight: bold;
       font-size: 1.3rem;
-      margin-bottom: 1em;
-
-      &::first-letter {
-        border-bottom: 2px solid currentColor;
-      }
+      margin-bottom: 1.5em;
     }
 
     p {
       font-size: 1.1rem;
-      line-height: 2;
-    }
-
-    .left {
-      text-align: left;
-    }
-
-    .right {
-      text-align: right;
-    }
-
-    .flex {
-      justify-content: space-between;
-    }
-    &:hover {
-      transform: translateY(10px);
+      line-height: 1.5;
+      color: $primary-color;
     }
   }
 }
 
 .wyg {
   text-align: center;
-  background-color: $dark-color;
+  background-color: #172654;
 
   h2 {
     color: white;
@@ -311,6 +299,7 @@ header {
       width: 4rem;
       height: 4rem;
       border-radius: 50%;
+      box-shadow: 3px -3px 10px #00000026;
       top: 0;
       left: 50%;
       transform: translate(-50%, -50%);
@@ -332,7 +321,7 @@ header {
 
       p {
         color: black;
-        line-height: 1.8;
+        line-height: 1.5;
         text-align: center;
         font-size: 0.9em;
       }

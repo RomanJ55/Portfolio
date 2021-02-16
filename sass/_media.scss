@@ -37,16 +37,27 @@
   }
 
   .skills {
+    background-image: url("../img/skills-bg.png");
+    background-position: top center;
+    background-size: cover;
     .cards {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      flex-basis: auto;
-    }
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2em;
+      margin: 6em 0;
 
-    .card:last-child {
-      margin-left: auto;
-      margin-right: auto;
+      .card {
+        p {
+          color: white;
+        }
+        &:nth-child(2) {
+          transform: translateY(-1.5em);
+        }
+
+        &:first-child,
+        &:last-child {
+          transform: translateY(1.5em);
+        }
+      }
     }
   }
 
@@ -168,18 +179,18 @@
 
   .skills {
     .cards {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 1.5em;
+      gap: 4em;
+      margin: 7em 0;
 
-      .card:last-child {
-        grid-column: 1 / 3;
-        margin-left: 20%;
-        margin-right: 20%;
-      }
+      .card {
+        transition: 0.7s;
+        &:hover {
+          transform: translateY(1.8em);
+        }
 
-      .card .flex {
-        height: auto;
+        &:nth-child(2):hover {
+          transform: translateY(-1.2em);
+        }
       }
     }
   }
@@ -227,11 +238,10 @@
   }
 
   .skills {
-    background-image: url(../img/skills-bg-big.png);
-  }
-
-  .skills .card .flex {
-    justify-content: space-around;
+    .cards {
+      gap: 5.5em;
+      margin: 12em 0;
+    }
   }
 
   .wyg {
@@ -259,5 +269,12 @@
   }
   .container {
     margin: 0 13%;
+  }
+
+  .skills {
+    .cards {
+      gap: 6.5em;
+      margin: 10em 0;
+    }
   }
 }
