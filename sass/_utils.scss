@@ -53,8 +53,9 @@
 }
 
 .glass {
-  background-color: #3d64e11f;
+  background-color: #ffffff17;
   @media (min-width: 999px) {
+    background-color: #3d64e11f;
     backdrop-filter: blur(0.3em);
     box-shadow: -2px -2px 5px #00000033;
   }

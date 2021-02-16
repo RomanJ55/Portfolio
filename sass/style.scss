@@ -32,10 +32,10 @@ header {
   .mobile-nav {
     position: absolute;
     top: 0;
-    left: 0;
+    right: 0;
     width: 50vw;
     height: 100vh;
-    background-color: #000000e0;
+    background-color: #151515f2;
 
     ul {
       flex-direction: column;
@@ -45,7 +45,7 @@ header {
       li {
         margin: 2em 0;
         border-bottom: 1px solid white;
-        padding: 0.7em 0;
+        padding: 0.3em 0;
         a {
           color: white;
           font-size: 1.1em;
@@ -56,6 +56,11 @@ header {
           border: none;
           margin-top: 0;
           cursor: pointer;
+        }
+
+        &:first-child {
+          transform: translateY(-12rem);
+          margin: 0;
         }
       }
     }
@@ -137,7 +142,7 @@ header {
 
   .project {
     padding: 1.5em;
-    background-color: rgb(236, 236, 236);
+    background-color: #ececec;
     h3 {
       color: $primary-color;
       font-size: 1.5rem;
@@ -159,6 +164,7 @@ header {
         li {
           font-size: 0.6em;
           background-color: #dedede;
+          color: #081e46;
           border-radius: 4px;
           padding: 0.7em;
         }
@@ -230,6 +236,9 @@ header {
 
 .skills {
   text-align: center;
+  background-image: url("../img/skills-bg-sm.png");
+  background-position: center;
+  background-size: cover;
 
   h2 {
     margin-bottom: 0.5rem;
@@ -238,12 +247,12 @@ header {
   .cards {
     display: grid;
     margin: 5em 0;
-    gap: 1.5em;
+    gap: 2em;
   }
 
   .card {
     min-width: 160px;
-    margin: 0;
+    margin: 0 5%;
     padding: 1em;
     h3 {
       font-weight: bold;
@@ -254,7 +263,13 @@ header {
     p {
       font-size: 1.1rem;
       line-height: 1.5;
-      color: $primary-color;
+      color: #06164a;
+    }
+
+    &:last-child {
+      p {
+        color: white;
+      }
     }
   }
 }
@@ -262,6 +277,7 @@ header {
 .wyg {
   text-align: center;
   background-color: #172654;
+  margin-top: -0.05em;
 
   h2 {
     color: white;
@@ -367,7 +383,7 @@ header {
       margin-bottom: 0.7em;
       border-radius: 0.7em;
       padding: 1em;
-      border-color: $primary-color;
+      border: 1px solid #3c62dc99;
     }
 
     .btn {
@@ -378,13 +394,18 @@ header {
 }
 
 footer {
-  padding-top: 1em;
+  padding: 1em 0;
   .flex {
     justify-content: space-between;
   }
   .footer-logo {
     height: 2.5rem;
     width: auto;
+  }
+
+  p {
+    text-align: center;
+    font-size: 0.8em;
   }
 
   .social {
@@ -395,19 +416,6 @@ footer {
 
       &:hover {
         transform: translateY(-5px);
-      }
-    }
-  }
-
-  nav {
-    ul {
-      margin: 1em 0;
-      li a {
-        color: black;
-
-        &:hover {
-          color: $primary-color;
-        }
       }
     }
   }
