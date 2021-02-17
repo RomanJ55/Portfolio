@@ -134,30 +134,32 @@ header {
   .project {
     padding: 1.5em;
     background-color: #ececec;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     h3 {
       color: $primary-color;
       font-size: 1.5rem;
     }
 
     p {
-      margin: 1.5em auto;
       font-size: 0.85em;
-      max-width: 46ch;
       line-height: 1.7;
+      padding: 1.5em 0;
     }
 
     .tags {
+      padding: 1.5em 0;
       ul {
         display: flex;
         justify-content: space-between;
-        padding: 0.5em 0;
 
         li {
           font-size: 0.6em;
           background-color: #dedede;
           color: $secondary-color;
           border-radius: 4px;
-          padding: 0.7em;
+          padding: 0.5em 0.8em;
         }
       }
     }
@@ -165,16 +167,10 @@ header {
     .preview {
       display: flex;
       justify-content: space-between;
-      margin-top: 1em;
-
       .btn {
         padding: 0.5em 1.5em;
         font-size: 0.85em;
       }
-    }
-
-    img {
-      margin: 1.5em 0;
     }
 
     &:hover img {
