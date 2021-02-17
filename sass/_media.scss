@@ -22,6 +22,12 @@
     }
   }
 
+  .hero {
+    h1 {
+      font-size: 3.1rem;
+    }
+  }
+
   .projects {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -76,7 +82,7 @@
   }
 
   .skills {
-    background-image: url("../img/skills-bg.png");
+    background-image: url("../assets/skills-bg.png");
     background-position: top center;
     background-size: cover;
     .cards {
@@ -140,20 +146,26 @@
   html {
     font-size: 1.2em;
   }
-  .container {
-    margin: 0 8%;
-  }
 
   .hero {
     text-align: left;
     min-height: 87vh;
-    background-image: url(../img/guy-sm.png);
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: auto;
+
+    .container {
+      display: grid;
+      grid-template-columns: 60% 40%;
+      justify-content: center;
+      align-items: center;
+      overflow: inherit;
+    }
 
     .content {
       align-items: flex-start;
+    }
+
+    img {
+      display: block;
+      transform: translateX(2.5rem);
     }
   }
 
@@ -205,9 +217,11 @@
     .cards {
       gap: 4em;
       margin: 7em 0;
+      justify-items: center;
 
       .card {
         transition: 0.7s;
+        padding: 1em 2.5em;
         &:hover {
           transform: translateY(1.8em);
         }
@@ -249,16 +263,17 @@
     font-size: 1.4em;
   }
   .container {
-    margin: 0 10%;
+    margin: 0 7%;
   }
 
   .hero {
-    background-image: url(../img/guy.png);
-    background-size: contain;
-  }
+    h1 {
+      white-space: nowrap;
+    }
 
-  .hero .bg {
-    background-image: url(../img/hero-bg-big.png);
+    img {
+      transform: translateX(3rem);
+    }
   }
 
   .skills {
@@ -282,7 +297,7 @@
   }
 
   .contact {
-    background-image: url(../img/contact-bg-big.png);
+    background-image: url(../assets/contact-bg-big.png);
 
     form {
       input,
@@ -299,7 +314,7 @@
     font-size: 2.2em;
   }
   .container {
-    margin: 0 13%;
+    margin: 0 8%;
   }
 
   .skills {

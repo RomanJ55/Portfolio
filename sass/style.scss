@@ -15,7 +15,7 @@ header {
   }
 
   .navigation {
-    margin: 1rem 0;
+    padding: 0.5em 0;
   }
 
   .navigation .flex {
@@ -86,18 +86,6 @@ header {
     height: auto;
     width: 100%;
   }
-  .bg {
-    background-image: url("../img/hero-bg.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-  }
 
   .content {
     height: 100%;
@@ -106,30 +94,33 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
 
-  h1 {
-    span {
-      color: transparent;
-      transition: color 0.9s ease;
-      .fade {
-        color: $primary-color;
+    h1 {
+      span {
+        color: transparent;
+        transition: color 0.9s ease;
+        .fade {
+          color: $primary-color;
+        }
       }
     }
-  }
-  p {
-    color: $dark-color;
-    margin: 1em 0;
-    span {
+    p {
+      color: $dark-color;
+      margin-bottom: 3em;
+      span {
+        font-weight: bold;
+      }
+    }
+
+    .btn {
+      font-size: 1.1rem;
       font-weight: bold;
+      padding: 0.5em 1.7em;
     }
   }
 
-  .btn {
-    margin: 3rem 0;
-    font-size: 1.2rem;
-    font-weight: bold;
-    padding: 0.6em 1.85em;
+  img {
+    display: none;
   }
 }
 
@@ -236,7 +227,7 @@ header {
 
 .skills {
   text-align: center;
-  background-image: url("../img/skills-bg-sm.png");
+  background-image: url("../assets/skills-bg-sm.png");
   background-position: center;
   background-size: cover;
 
@@ -277,7 +268,7 @@ header {
 .wyg {
   text-align: center;
   background-color: $secondary-color;
-  margin-top: -0.05em;
+  margin-top: -0.06em;
 
   h2 {
     color: white;
@@ -333,6 +324,7 @@ header {
         text-align: center;
         font-size: 1.3em;
         margin-bottom: 1em;
+        padding-top: 0.3em;
       }
 
       p {
@@ -346,14 +338,11 @@ header {
     &:last-child {
       margin-bottom: 5em;
     }
-    &:hover {
-      transform: scale(1.015);
-    }
   }
 }
 
 .contact {
-  background-image: url("../img/contact-bg.png");
+  background-image: url("../assets/contact-bg.png");
   background-position: center;
   background-size: cover;
   background-color: $primary-color;
