@@ -164,7 +164,7 @@ header {
         li {
           font-size: 0.6em;
           background-color: #dedede;
-          color: #081e46;
+          color: $secondary-color;
           border-radius: 4px;
           padding: 0.7em;
         }
@@ -276,7 +276,7 @@ header {
 
 .wyg {
   text-align: center;
-  background-color: #172654;
+  background-color: $secondary-color;
   margin-top: -0.05em;
 
   h2 {
@@ -375,14 +375,15 @@ header {
     label {
       margin: 0.2em 0;
       font-size: 1.1em;
-      border-width: 0.2px;
     }
 
     input,
     textarea {
       margin-bottom: 0.7em;
       border-radius: 0.7em;
-      padding: 1em;
+      padding: 0.5em;
+      font-size: inherit;
+      color: $secondary-color;
       border: 1px solid #3c62dc99;
     }
 

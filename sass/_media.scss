@@ -15,10 +15,9 @@
     nav {
       display: block;
       li a {
-        color: black;
-        font-size: 1.15rem;
+        color: $secondary-color;
+        font-size: 1.1rem;
         margin-left: 3em;
-        font-weight: 500;
       }
     }
   }
@@ -284,6 +283,13 @@
 
   .contact {
     background-image: url(../img/contact-bg-big.png);
+
+    form {
+      input,
+      textarea {
+        border: 2px solid #3c62dc99;
+      }
+    }
   }
 }
 
